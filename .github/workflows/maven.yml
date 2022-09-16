@@ -28,5 +28,5 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: Running JUnit test 
-      run: ./src/test/java/org/example AppTest.java
+      run: ./src/test/java/org/example/AppTest.java
 
