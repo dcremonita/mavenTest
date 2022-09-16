@@ -13,7 +13,7 @@ class AppTest {
     void compareUserInputToAnswer() {
 
 
-        assertEquals("Your answer is too small.", numberGuessingGame.checkAnswer(answer, 3));
+        assertEquals("Your answer is too", numberGuessingGame.checkAnswer(answer, 3));
         assertEquals("Your answer is too big.", numberGuessingGame.checkAnswer(answer, 7));
         assertEquals("Your answer is correct!", numberGuessingGame.checkAnswer(answer, 5));
 
