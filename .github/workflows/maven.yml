@@ -26,7 +26,5 @@ jobs:
         
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-      
-    - name: Running JUnit test 
-      run: ./src/test/java/org/example/AppTest.java
+
 
