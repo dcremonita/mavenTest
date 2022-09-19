@@ -48,14 +48,24 @@ public class App
 
         App numberGuessingGame = new App();
         Scanner input = new Scanner(System.in);
+
+        System.out.println("Which level would you like to try:\nReply 1 to play for the 0-10 range\nReply 2 to play for the 0-100 range");
+        int levelChoice = input.nextInt();
+
         Random random = new Random();
 
-        int answer = 5;
-        //int answer = random.nextInt(10) ;
+        int answer = 0;
 
+        if (levelChoice == 1) {
+            answer = random.nextInt(10);
+
+        } else if (levelChoice == 2){
+            answer = random.nextInt(100);
+        }
+        System.out.println(answer);
 
         while (tries > 0) {
-            System.out.println("\nPlease input an integer between 1-10:");
+            System.out.print("\nPlease input an integer between " + ( (levelChoice == 1) ? "0-10:" : "0-100:") + "\n");
             int userInput = input.nextInt();
             tries -= 1;
 
